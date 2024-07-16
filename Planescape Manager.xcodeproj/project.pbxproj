@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B3AEB072C1E790100C8C027 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB062C1E790100C8C027 /* SplashScreen.swift */; };
+		7B3AEB0E2C1E845C00C8C027 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB0B2C1E845C00C8C027 /* AuthView.swift */; };
+		7B3AEB0F2C1E845C00C8C027 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB0C2C1E845C00C8C027 /* AuthViewModel.swift */; };
+		7B3AEB112C1E849E00C8C027 /* SigninEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB102C1E849E00C8C027 /* SigninEmailView.swift */; };
+		7B3AEB132C1E84BB00C8C027 /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB122C1E84BB00C8C027 /* SignInGoogleHelper.swift */; };
+		7B3AEB152C1E84C000C8C027 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB142C1E84C000C8C027 /* AuthenticationManager.swift */; };
+		7B3AEB1A2C1E850700C8C027 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 7B3AEB192C1E850700C8C027 /* GoogleSignIn */; };
+		7B3AEB1C2C1E850700C8C027 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7B3AEB1B2C1E850700C8C027 /* GoogleSignInSwift */; };
+		7B3AEB1F2C1E853B00C8C027 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 7B3AEB1E2C1E853B00C8C027 /* FirebaseAppCheck */; };
+		7B3AEB232C1E86C400C8C027 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB222C1E86C400C8C027 /* RootView.swift */; };
+		7B3AEB272C1E885900C8C027 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7B3AEB262C1E885900C8C027 /* FirebaseAuth */; };
+		7B3AEB2A2C1E888E00C8C027 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB282C1E888E00C8C027 /* Utilities.swift */; };
+		7B3AEB2D2C1E8A7700C8C027 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB2C2C1E8A7700C8C027 /* ProfileView.swift */; };
+		7B3AEB332C1E8EFD00C8C027 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB322C1E8EFD00C8C027 /* ProfileViewModel.swift */; };
+		7B3AEB352C1E92A600C8C027 /* SpellBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB342C1E92A600C8C027 /* SpellBookView.swift */; };
+		7B3AEB392C1EA0BB00C8C027 /* SpellCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEB382C1EA0BB00C8C027 /* SpellCardList.swift */; };
+		7B3AEB3B2C1FB70C00C8C027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B3AEB3A2C1FB70C00C8C027 /* GoogleService-Info.plist */; };
+		7BAA9E082BF5668C00E95F46 /* Planescape_ManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E072BF5668C00E95F46 /* Planescape_ManagerApp.swift */; };
+		7BAA9E0C2BF5668F00E95F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAA9E0B2BF5668F00E95F46 /* Assets.xcassets */; };
+		7BAA9E0F2BF5668F00E95F46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAA9E0E2BF5668F00E95F46 /* Preview Assets.xcassets */; };
+		7BAA9E112BF5668F00E95F46 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E102BF5668F00E95F46 /* Persistence.swift */; };
+		7BAA9E142BF5668F00E95F46 /* Planescape_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E122BF5668F00E95F46 /* Planescape_Manager.xcdatamodeld */; };
+		7BAA9E1C2BF5672100E95F46 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E1B2BF5672100E95F46 /* HomeView.swift */; };
+		7BAA9E1F2BF56E1500E95F46 /* SpellCardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E1E2BF56E1500E95F46 /* SpellCardDetailsView.swift */; };
+		7BAA9E212BF570E000E95F46 /* SpellCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E202BF570E000E95F46 /* SpellCardViewModel.swift */; };
+		7BAA9E242BF573A800E95F46 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E232BF573A800E95F46 /* PreviewProvider.swift */; };
+		7BAA9E272BF57E0100E95F46 /* SpellDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E262BF57E0100E95F46 /* SpellDataService.swift */; };
+		7BAA9E292BF582C500E95F46 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E282BF582C500E95F46 /* HomeViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B3AEB062C1E790100C8C027 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		7B3AEB0B2C1E845C00C8C027 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		7B3AEB0C2C1E845C00C8C027 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		7B3AEB102C1E849E00C8C027 /* SigninEmailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninEmailView.swift; sourceTree = "<group>"; };
+		7B3AEB122C1E84BB00C8C027 /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
+		7B3AEB142C1E84C000C8C027 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		7B3AEB222C1E86C400C8C027 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		7B3AEB282C1E888E00C8C027 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7B3AEB2C2C1E8A7700C8C027 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7B3AEB322C1E8EFD00C8C027 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		7B3AEB342C1E92A600C8C027 /* SpellBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBookView.swift; sourceTree = "<group>"; };
+		7B3AEB382C1EA0BB00C8C027 /* SpellCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCardList.swift; sourceTree = "<group>"; };
+		7B3AEB3A2C1FB70C00C8C027 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B3AEB3C2C1FB8CF00C8C027 /* Planescape-Manager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Planescape-Manager-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7BAA9E042BF5668C00E95F46 /* Planescape Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planescape Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BAA9E072BF5668C00E95F46 /* Planescape_ManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planescape_ManagerApp.swift; sourceTree = "<group>"; };
+		7BAA9E0B2BF5668F00E95F46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BAA9E0E2BF5668F00E95F46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BAA9E102BF5668F00E95F46 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7BAA9E132BF5668F00E95F46 /* Planescape_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Planescape_Manager.xcdatamodel; sourceTree = "<group>"; };
+		7BAA9E1B2BF5672100E95F46 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7BAA9E1E2BF56E1500E95F46 /* SpellCardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCardDetailsView.swift; sourceTree = "<group>"; };
+		7BAA9E202BF570E000E95F46 /* SpellCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCardViewModel.swift; sourceTree = "<group>"; };
+		7BAA9E232BF573A800E95F46 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		7BAA9E262BF57E0100E95F46 /* SpellDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDataService.swift; sourceTree = "<group>"; };
+		7BAA9E282BF582C500E95F46 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BAA9E012BF5668C00E95F46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B3AEB1A2C1E850700C8C027 /* GoogleSignIn in Frameworks */,
+				7B3AEB1F2C1E853B00C8C027 /* FirebaseAppCheck in Frameworks */,
+				7B3AEB1C2C1E850700C8C027 /* GoogleSignInSwift in Frameworks */,
+				7B3AEB272C1E885900C8C027 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B3AEB0D2C1E845C00C8C027 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7B3AEB0B2C1E845C00C8C027 /* AuthView.swift */,
+				7B3AEB0C2C1E845C00C8C027 /* AuthViewModel.swift */,
+				7B3AEB142C1E84C000C8C027 /* AuthenticationManager.swift */,
+				7B3AEB122C1E84BB00C8C027 /* SignInGoogleHelper.swift */,
+				7B3AEB102C1E849E00C8C027 /* SigninEmailView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7B3AEB292C1E888E00C8C027 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7B3AEB282C1E888E00C8C027 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7B3AEB2B2C1E8A6800C8C027 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7B3AEB2C2C1E8A7700C8C027 /* ProfileView.swift */,
+				7B3AEB322C1E8EFD00C8C027 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7B3AEB362C1E9E4800C8C027 /* SpellBook */ = {
+			isa = PBXGroup;
+			children = (
+				7BAA9E262BF57E0100E95F46 /* SpellDataService.swift */,
+				7B3AEB342C1E92A600C8C027 /* SpellBookView.swift */,
+				7B3AEB382C1EA0BB00C8C027 /* SpellCardList.swift */,
+				7BAA9E1E2BF56E1500E95F46 /* SpellCardDetailsView.swift */,
+				7BAA9E202BF570E000E95F46 /* SpellCardViewModel.swift */,
+			);
+			path = SpellBook;
+			sourceTree = "<group>";
+		};
+		7B3AEB372C1E9E5000C8C027 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		7BAA9DFB2BF5668C00E95F46 = {
+			isa = PBXGroup;
+			children = (
+				7BAA9E062BF5668C00E95F46 /* Planescape Manager */,
+				7BAA9E052BF5668C00E95F46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BAA9E052BF5668C00E95F46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BAA9E042BF5668C00E95F46 /* Planescape Manager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BAA9E062BF5668C00E95F46 /* Planescape Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7B3AEB3C2C1FB8CF00C8C027 /* Planescape-Manager-Info.plist */,
+				7BAA9E072BF5668C00E95F46 /* Planescape_ManagerApp.swift */,
+				7B3AEB062C1E790100C8C027 /* SplashScreen.swift */,
+				7BAA9E102BF5668F00E95F46 /* Persistence.swift */,
+				7B3AEB3A2C1FB70C00C8C027 /* GoogleService-Info.plist */,
+				7B3AEB372C1E9E5000C8C027 /* Characters */,
+				7B3AEB362C1E9E4800C8C027 /* SpellBook */,
+				7BAA9E252BF57DEB00E95F46 /* Services */,
+				7BAA9E1A2BF566DF00E95F46 /* Home */,
+				7B3AEB2B2C1E8A6800C8C027 /* Profile */,
+				7B3AEB292C1E888E00C8C027 /* Utilities */,
+				7B3AEB0D2C1E845C00C8C027 /* Authentication */,
+				7BAA9E222BF5738F00E95F46 /* PreviewProvider */,
+				7BAA9E122BF5668F00E95F46 /* Planescape_Manager.xcdatamodeld */,
+				7BAA9E0B2BF5668F00E95F46 /* Assets.xcassets */,
+				7BAA9E0D2BF5668F00E95F46 /* Preview Content */,
+			);
+			path = "Planescape Manager";
+			sourceTree = "<group>";
+		};
+		7BAA9E0D2BF5668F00E95F46 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7BAA9E0E2BF5668F00E95F46 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BAA9E1A2BF566DF00E95F46 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7B3AEB222C1E86C400C8C027 /* RootView.swift */,
+				7BAA9E1B2BF5672100E95F46 /* HomeView.swift */,
+				7BAA9E282BF582C500E95F46 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7BAA9E222BF5738F00E95F46 /* PreviewProvider */ = {
+			isa = PBXGroup;
+			children = (
+				7BAA9E232BF573A800E95F46 /* PreviewProvider.swift */,
+			);
+			path = PreviewProvider;
+			sourceTree = "<group>";
+		};
+		7BAA9E252BF57DEB00E95F46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BAA9E032BF5668C00E95F46 /* Planescape Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BAA9E172BF5668F00E95F46 /* Build configuration list for PBXNativeTarget "Planescape Manager" */;
+			buildPhases = (
+				7BAA9E002BF5668C00E95F46 /* Sources */,
+				7BAA9E012BF5668C00E95F46 /* Frameworks */,
+				7BAA9E022BF5668C00E95F46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Planescape Manager";
+			packageProductDependencies = (
+				7B3AEB192C1E850700C8C027 /* GoogleSignIn */,
+				7B3AEB1B2C1E850700C8C027 /* GoogleSignInSwift */,
+				7B3AEB1E2C1E853B00C8C027 /* FirebaseAppCheck */,
+				7B3AEB262C1E885900C8C027 /* FirebaseAuth */,
+			);
+			productName = "Planescape Manager";
+			productReference = 7BAA9E042BF5668C00E95F46 /* Planescape Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BAA9DFC2BF5668C00E95F46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					7BAA9E032BF5668C00E95F46 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 7BAA9DFF2BF5668C00E95F46 /* Build configuration list for PBXProject "Planescape Manager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BAA9DFB2BF5668C00E95F46;
+			packageReferences = (
+				7B3AEB182C1E850700C8C027 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				7B3AEB1D2C1E853B00C8C027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 7BAA9E052BF5668C00E95F46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BAA9E032BF5668C00E95F46 /* Planescape Manager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BAA9E022BF5668C00E95F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BAA9E0F2BF5668F00E95F46 /* Preview Assets.xcassets in Resources */,
+				7BAA9E0C2BF5668F00E95F46 /* Assets.xcassets in Resources */,
+				7B3AEB3B2C1FB70C00C8C027 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BAA9E002BF5668C00E95F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B3AEB072C1E790100C8C027 /* SplashScreen.swift in Sources */,
+				7B3AEB332C1E8EFD00C8C027 /* ProfileViewModel.swift in Sources */,
+				7B3AEB152C1E84C000C8C027 /* AuthenticationManager.swift in Sources */,
+				7B3AEB112C1E849E00C8C027 /* SigninEmailView.swift in Sources */,
+				7B3AEB232C1E86C400C8C027 /* RootView.swift in Sources */,
+				7BAA9E112BF5668F00E95F46 /* Persistence.swift in Sources */,
+				7B3AEB0E2C1E845C00C8C027 /* AuthView.swift in Sources */,
+				7BAA9E212BF570E000E95F46 /* SpellCardViewModel.swift in Sources */,
+				7BAA9E142BF5668F00E95F46 /* Planescape_Manager.xcdatamodeld in Sources */,
+				7BAA9E292BF582C500E95F46 /* HomeViewModel.swift in Sources */,
+				7BAA9E272BF57E0100E95F46 /* SpellDataService.swift in Sources */,
+				7B3AEB2D2C1E8A7700C8C027 /* ProfileView.swift in Sources */,
+				7B3AEB352C1E92A600C8C027 /* SpellBookView.swift in Sources */,
+				7B3AEB2A2C1E888E00C8C027 /* Utilities.swift in Sources */,
+				7B3AEB392C1EA0BB00C8C027 /* SpellCardList.swift in Sources */,
+				7BAA9E1C2BF5672100E95F46 /* HomeView.swift in Sources */,
+				7BAA9E242BF573A800E95F46 /* PreviewProvider.swift in Sources */,
+				7B3AEB132C1E84BB00C8C027 /* SignInGoogleHelper.swift in Sources */,
+				7BAA9E082BF5668C00E95F46 /* Planescape_ManagerApp.swift in Sources */,
+				7B3AEB0F2C1E845C00C8C027 /* AuthViewModel.swift in Sources */,
+				7BAA9E1F2BF56E1500E95F46 /* SpellCardDetailsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7BAA9E152BF5668F00E95F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BAA9E162BF5668F00E95F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BAA9E182BF5668F00E95F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Planescape Manager/Preview Content\"";
+				DEVELOPMENT_TEAM = 33F3ZXWDU6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Planescape-Manager-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vesselone.ca.Planescape-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7BAA9E192BF5668F00E95F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Planescape Manager/Preview Content\"";
+				DEVELOPMENT_TEAM = 33F3ZXWDU6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Planescape-Manager-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vesselone.ca.Planescape-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BAA9DFF2BF5668C00E95F46 /* Build configuration list for PBXProject "Planescape Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BAA9E152BF5668F00E95F46 /* Debug */,
+				7BAA9E162BF5668F00E95F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BAA9E172BF5668F00E95F46 /* Build configuration list for PBXNativeTarget "Planescape Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BAA9E182BF5668F00E95F46 /* Debug */,
+				7BAA9E192BF5668F00E95F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B3AEB182C1E850700C8C027 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+		7B3AEB1D2C1E853B00C8C027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B3AEB192C1E850700C8C027 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B3AEB182C1E850700C8C027 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		7B3AEB1B2C1E850700C8C027 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B3AEB182C1E850700C8C027 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		7B3AEB1E2C1E853B00C8C027 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B3AEB1D2C1E853B00C8C027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		7B3AEB262C1E885900C8C027 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B3AEB1D2C1E853B00C8C027 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7BAA9E122BF5668F00E95F46 /* Planescape_Manager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7BAA9E132BF5668F00E95F46 /* Planescape_Manager.xcdatamodel */,
+			);
+			currentVersion = 7BAA9E132BF5668F00E95F46 /* Planescape_Manager.xcdatamodel */;
+			path = Planescape_Manager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7BAA9DFC2BF5668C00E95F46 /* Project object */;
+}
