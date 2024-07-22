@@ -15,7 +15,21 @@ class SpellDataService: ObservableObject {
     
     init() {
         // Ideally this would be another call to get all spells according to some other criteria
-        let mySpells = ["mending", "prestidigitation", "alarm", "detect-magic", "jump", "magic-missile", "thunderwave"]
+        let mySpells = [
+            "mending",
+            "prestidigitation",
+            "alarm",
+            "detect-magic",
+            "jump",
+            "magic-missile",
+            "thunderwave",
+            "acid-arrow",
+            "antipathy-sympathy",
+            "command",
+            "disintegrate",
+            "irresistible-dance",
+            "tongues",
+            "word-of-recall"]
         mySpells.forEach { spellid in
              getSpell(spellId: spellid)
          }
