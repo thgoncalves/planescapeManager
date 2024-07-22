@@ -13,11 +13,13 @@ struct ProfileView: View {
     
     var body: some View {
         NavigationStack {
-            ZStack {
+            VStack {
                 Image("spell_book_library")
                     .resizable()
                     .scaledToFill()
+                    .frame(height: 200)
                     .edgesIgnoringSafeArea(.all)
+                    .clipped()
                 
                 VStack(alignment: .center, spacing: 2) {
                     Image(systemName: "person.crop.circle.fill")
@@ -26,7 +28,6 @@ struct ProfileView: View {
                         .frame(width: 200, height: 200)
                         .foregroundColor(.black)
                         .padding(15)
-                        .frame(width: .infinity)
                         .background(Color.white.opacity(0.9))
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .shadow(radius: 10)
@@ -52,8 +53,8 @@ struct ProfileView: View {
                         .cornerRadius(10)
                     }
                 }
-                .offset(y: -100)
             }
+            Spacer()
             .toolbarBackground(Color.blue, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {

@@ -15,6 +15,7 @@ final class Utilities {
     @MainActor
     func topViewController(controller: UIViewController? = nil)->UIViewController?{
         
+        // Don't really know how to fix this Warning. SAo I'll leave it as it is
         let controller = controller ?? UIApplication.shared.keyWindow?.rootViewController
         
         if let navigationController = controller as? UINavigationController {

@@ -19,13 +19,14 @@ struct Planescape_ManagerApp: App {
     
     @StateObject private var vm = HomeViewModel()
     
-    let persistenceController = PersistenceController.shared
+    // First idea was to use Core Data, but I abandoned that for now
+//    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
                 .navigationBarHidden(true)
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
         .environmentObject(vm)
     }

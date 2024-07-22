@@ -28,14 +28,8 @@ struct SpellCardList: View {
                 Divider()
             }
         }
-//        .padding(.vertical,10)
-//        .padding(.horizontal,5)
         .frame(maxWidth: 500, alignment: .leading)
         .background(Color.white)
-//        .overlay(
-//            Rectangle()
-//                .stroke(Color.gray, lineWidth: 1)
-//        )
     }
 }
 

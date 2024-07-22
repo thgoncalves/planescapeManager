@@ -26,12 +26,12 @@ struct HomeView: View {
                                     .clipShape(Circle())
                                     .shadow(radius: 10)
                             }
-                            Text("Spells")
+                            Text("Spells\n")
                         }
                         .padding(15)
-                        .frame(width: .infinity)
                         .background(Color.orange.opacity(0.6))
                         .clipShape(RoundedRectangle(cornerRadius: 10))
+                        
                         VStack{
                             Image("character_group_icon")
                                 .resizable()
@@ -39,10 +39,11 @@ struct HomeView: View {
                                 .frame(maxWidth: iconSize, maxHeight: iconSize)
                                 .clipShape(Circle())
                                 .shadow(radius: 10)
-                            Text("Characters")
+                                .overlay(Circle().fill(Color.gray.opacity(0.5)))
+                                .disabled(true)
+                            Text("Characters\n(Disabled)")
                         }
                         .padding(15)
-                        .frame(width: .infinity)
                         .background(Color.orange.opacity(0.6))
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
@@ -51,12 +52,11 @@ struct HomeView: View {
                 Spacer()
             }
             .padding()
-            .navigationTitle("Test")
             .toolbarBackground(Color.blue, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing){
-                Text("D&D\nSpellbook")
+                Text("D&D Spellbook")
                         .fontWeight(.black)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {

@@ -35,6 +35,7 @@
 		7BAA9E242BF573A800E95F46 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E232BF573A800E95F46 /* PreviewProvider.swift */; };
 		7BAA9E272BF57E0100E95F46 /* SpellDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E262BF57E0100E95F46 /* SpellDataService.swift */; };
 		7BAA9E292BF582C500E95F46 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA9E282BF582C500E95F46 /* HomeViewModel.swift */; };
+		7BB287462C4F1744003E5207 /* CharacterDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB287452C4F1744003E5207 /* CharacterDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		7BAA9E232BF573A800E95F46 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		7BAA9E262BF57E0100E95F46 /* SpellDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDataService.swift; sourceTree = "<group>"; };
 		7BAA9E282BF582C500E95F46 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7BB287452C4F1744003E5207 /* CharacterDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		7B3AEB2B2C1E8A6800C8C027 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				7BB287452C4F1744003E5207 /* CharacterDataService.swift */,
 				7B3AEB2C2C1E8A7700C8C027 /* ProfileView.swift */,
 				7B3AEB322C1E8EFD00C8C027 /* ProfileViewModel.swift */,
 			);
@@ -155,7 +158,6 @@
 				7B3AEB3A2C1FB70C00C8C027 /* GoogleService-Info.plist */,
 				7B3AEB372C1E9E5000C8C027 /* Characters */,
 				7B3AEB362C1E9E4800C8C027 /* SpellBook */,
-				7BAA9E252BF57DEB00E95F46 /* Services */,
 				7BAA9E1A2BF566DF00E95F46 /* Home */,
 				7B3AEB2B2C1E8A6800C8C027 /* Profile */,
 				7B3AEB292C1E888E00C8C027 /* Utilities */,
@@ -192,13 +194,6 @@
 				7BAA9E232BF573A800E95F46 /* PreviewProvider.swift */,
 			);
 			path = PreviewProvider;
-			sourceTree = "<group>";
-		};
-		7BAA9E252BF57DEB00E95F46 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +294,7 @@
 				7B3AEB392C1EA0BB00C8C027 /* SpellCardList.swift in Sources */,
 				7BAA9E1C2BF5672100E95F46 /* HomeView.swift in Sources */,
 				7BAA9E242BF573A800E95F46 /* PreviewProvider.swift in Sources */,
+				7BB287462C4F1744003E5207 /* CharacterDataService.swift in Sources */,
 				7B3AEB132C1E84BB00C8C027 /* SignInGoogleHelper.swift in Sources */,
 				7BAA9E082BF5668C00E95F46 /* Planescape_ManagerApp.swift in Sources */,
 				7B3AEB0F2C1E845C00C8C027 /* AuthViewModel.swift in Sources */,

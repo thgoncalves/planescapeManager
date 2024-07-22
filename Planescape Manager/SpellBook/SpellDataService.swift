@@ -14,6 +14,7 @@ class SpellDataService: ObservableObject {
     private var spellSubscription = Set<AnyCancellable>()
     
     init() {
+        // Ideally this would be another call to get all spells according to some other criteria
         let mySpells = ["mending", "prestidigitation", "alarm", "detect-magic", "jump", "magic-missile", "thunderwave"]
         mySpells.forEach { spellid in
              getSpell(spellId: spellid)

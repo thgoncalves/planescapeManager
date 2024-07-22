@@ -16,7 +16,7 @@ struct SpellBookView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 10) {
+                LazyVStack(alignment: .leading, spacing: 10) {
                     ForEach(vm.isSearching ? vm.filteredSpells :vm.allSpells) { spell in
                         NavigationLink(destination: SpellCardDetailsView(spell: spell)) {
                             SpellCardList(spellInfo: spell)
